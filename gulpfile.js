@@ -9,14 +9,19 @@ gulp.task('default', function () {
     ])
     .pipe(
       responsive({
-        '**/a7RII-0181.jpg': {
+        '**/cover.jpg': {
           width: 2048,
           quality: 70,
-          rename: 'cover.jpg'
         },
-        '**/ss*.png': {
-          width: 621
-        },
+        '**/ss*.png': [
+          {
+            width: 621
+          },
+          {
+            width: 621,
+            format: 'webp'
+          },
+        ]
       })
     )
     .pipe(gulp.dest('dist'))
