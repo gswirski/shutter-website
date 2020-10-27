@@ -5555,7 +5555,7 @@ input[type='button'].btn-block
 
 .navbar-brand
 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: inherit;
 
     display: inline-block;
@@ -5766,6 +5766,10 @@ input[type='button'].btn-block
 
 @media (min-width: 992px)
 {
+    .hero-image {
+        transform: scale(1) perspective(1040px) rotateY(-18deg) rotateX(0) rotate(0);
+    }
+
     .navbar-expand-lg
     {
         flex-flow: row nowrap;
