@@ -23,6 +23,14 @@ import Menu from "../components/menu"
   ```
 */
 function SearchBar({onChange}) {
+  const scrollToInput = function (input) {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      const top = input.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({top: top, left: 0, behavior: 'smooth'})
+    }
+  };
+
   return (
     <div>
       <div className="mt-1 relative rounded-md shadow-sm">
@@ -36,6 +44,7 @@ function SearchBar({onChange}) {
           className="focus:ring-red-500 focus:border-red-500 block w-full pl-12 pr-12 sm:text-sm border-gray-300 rounded-md"
           placeholder="Search: Sony a7 IV..."
           onChange={(e) => onChange(e.target.value)}
+          onFocus={(e) => scrollToInput(e.target)}
         />
       </div>
     </div>
@@ -46,7 +55,7 @@ function SearchBar({onChange}) {
 const camerasShort = [
   'a1', 'a9', 'a9 II', 'a7', 'a7 II', 'a7 III', 'a7 IV', 'a7R I', 'a7R II', 'a7R III', 'a7R IV',
   'a7S I', 'a7S II', 'a7S III', 'ZV-1', 'ZV-E10', 'RX100 VII'
-]
+];
 
 const cameras = camerasShort.map((camera) => (
   {
@@ -55,13 +64,13 @@ const cameras = camerasShort.map((camera) => (
     role: 'Admin',
     email: camera,
   },
-))
+));
 
 export default function Cameras() {
   const [searchQuery, setSearchQuery] = useState("")
 
   const displayCameras = cameras.filter((camera) => (
-    camera.name.includes(searchQuery)
+    camera.name.toLowerCase().includes(searchQuery.toLowerCase().trim().replace(/\s+/g, ' '))
   ))
 
   return (
