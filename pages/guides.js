@@ -75,17 +75,19 @@ export default function Guides() {
           <div className="mt-20">
             <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-20">
               {features.map((feature) => (
-                <Link href={feature.href} key={feature.name}>
-                  <a className="relative group block">
-                    <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md text-red-900 bg-red-100 group-hover:bg-red-200 ">
-                        <feature.icon className="h-6 w-6" aria-hidden="true" />
-                      </div>
-                      <p className="ml-16 text-2xl font-bold leading-6 font-medium text-gray-800 underline underline-offset-2 decoration-1 decoration-gray-400 group-hover:text-black group-hover:decoration-black">{feature.name}</p>
-                    </dt>
-                    <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
-                  </a>
-                </Link>
+                <div className="relative block">
+                  <dt>
+                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md text-red-900 bg-red-100 ">
+                      <feature.icon className="h-6 w-6" aria-hidden="true" />
+                    </div>
+                    <Link href={feature.href} key={feature.name}>
+                      <a className="ml-16 text-xl font-bold tracking-normal leading-6 text-gray-800 underline underline-offset-2 decoration-1 decoration-gray-600 hover:text-black hover:decoration-black">
+                        {feature.name}
+                      </a>
+                    </Link>
+                  </dt>
+                  <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
+                </div>
               ))}
             </dl>
           </div>
