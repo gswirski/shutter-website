@@ -35,7 +35,7 @@ function SearchBar({onChange}) {
           id="price"
           className="focus:ring-red-500 focus:border-red-500 block w-full pl-12 pr-12 sm:text-sm border-gray-300 rounded-md"
           placeholder="Search: Sony a7 IV..."
-          onChange={onChange}
+          onChange={(e) => onChange(e.target.value)}
         />
       </div>
     </div>
