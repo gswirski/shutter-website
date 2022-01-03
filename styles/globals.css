@@ -3,7 +3,5 @@
 @tailwind utilities;
 
 body {
-  overscroll-behavior-y: none;
-  width: 100%;
-  overflow: hidden;
+  overscroll-behavior-x: none;
 }
