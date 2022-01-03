@@ -1,36 +1,12 @@
-import { DownloadIcon, SearchIcon } from "@heroicons/react/outline"
+import { DownloadIcon, SearchIcon, CheckIcon, XIcon, ExclamationIcon } from "@heroicons/react/outline"
 import Head from "next/head"
 import Link from "next/link"
 import { useState } from "react"
+import { cameras } from "../components/cameras"
 import Footer from "../components/footer"
 import Menu from "../components/menu"
 
-
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 function SearchBar({onChange}) {
-  const scrollToInput = function (input) {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-      const top = input.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({top: top, left: 0, behavior: 'smooth'})
-    }
-  };
-
   return (
     <div>
       <div className="mt-1 relative rounded-md shadow-sm">
@@ -44,34 +20,18 @@ function SearchBar({onChange}) {
           className="focus:ring-red-500 focus:border-red-500 block w-full pl-12 pr-12 sm:text-sm border-gray-300 rounded-md"
           placeholder="Search: Sony a7 IV..."
           onChange={(e) => onChange(e.target.value)}
-          onFocus={(e) => scrollToInput(e.target)}
         />
       </div>
     </div>
   )
 }
 
-
-const camerasShort = [
-  'a1', 'a9', 'a9 II', 'a7', 'a7 II', 'a7 III', 'a7 IV', 'a7R I', 'a7R II', 'a7R III', 'a7R IV',
-  'a7S I', 'a7S II', 'a7S III', 'ZV-1', 'ZV-E10', 'RX100 VII'
-];
-
-const cameras = camerasShort.map((camera) => (
-  {
-    name: `Sony ${camera}`,
-    department: 'Optimization',
-    role: 'Admin',
-    email: camera,
-  },
-));
-
 export default function Cameras() {
   const [searchQuery, setSearchQuery] = useState("")
 
   const displayCameras = cameras.filter((camera) => (
-    camera.name.toLowerCase().includes(searchQuery.toLowerCase().trim().replace(/\s+/g, ' '))
-  ))
+    camera.name.toLowerCase().replace(/\s/g, '').includes(searchQuery.toLowerCase().replace(/\s/g, ''))
+  ));
 
   return (
     <div>
@@ -115,25 +75,37 @@ export default function Cameras() {
                           scope="col"
                           className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                         >
-                          Name
+                          Camera
                         </th>
                         <th
                           scope="col"
-                          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
                         >
-                          Title
+                          Supported
                         </th>
                         <th
                           scope="col"
-                          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
                         >
-                          Status
+                          Tap Focus
                         </th>
                         <th
                           scope="col"
-                          className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                          className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
                         >
-                          Role
+                          Video
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Burst Shoot.
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          BULB
                         </th>
                         <th scope="col" className="relative px-6 py-3">
                           <span className="sr-only">Edit</span>
@@ -141,20 +113,34 @@ export default function Cameras() {
                       </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
-                      {displayCameras.map((person) => (
-                        <tr key={person.email}>
+                      {displayCameras.map((camera) => (
+                        <tr key={camera.name}>
                           <td className="px-6 py-4 whitespace-nowrap">
-                            <div className="text-sm font-medium text-gray-900">{person.name}</div>
+                            <div className="text-sm font-medium text-gray-900">{camera.name}</div>
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
-                            <div className="text-sm text-gray-500">{person.department}</div>
+                            <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
-                            <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                              Active
-                            </span>
+                          { camera.focus == 'normal' || camera.focus == 'tracking'
+                              ? <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
+                              : <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{person.role}</td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                          { camera.video
+                              ? <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
+                              : <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                          { camera.burst
+                              ? <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
+                              : <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          { camera.bulb
+                              ? <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
+                              : <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
+                          </td>
                           <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                             <a href="#" className="text-gray-300 hover:text-gray-500">
                               <DownloadIcon className="h-6 w-6" aria-hidden="true" />

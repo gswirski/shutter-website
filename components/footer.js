@@ -13,7 +13,7 @@ export default function Footer() {
     return (
         <footer className="flex items-center justify-center w-full h-24 border-t">
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-          <span className="text-gray-400">Copyright &copy; 2022 Camera Control Apps sp. z o.o.</span>
+          <span className="text-gray-400">&copy; 2022 Camera Control Apps sp. z o.o.</span>
           {/*<div className="md:ml-10 md:pr-4 md:space-x-8">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
