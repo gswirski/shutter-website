@@ -83,7 +83,7 @@ export default function Header() {
                     <div>
                       <img
                         className="h-8 w-auto"
-                        src="https://i0.wp.com/shutter.dev/wp-content/uploads/2021/01/screenshot-2021-01-02-at-15.52.05.png?resize=117%2C117&ssl=1"
+                        src="/icon.svg"
                         alt=""
                       />
                     </div>
