@@ -36,7 +36,7 @@ export default function Header() {
                     <a href="/">
                       <span className="sr-only">Shutter</span>
                       <img
-                        className="h-8 w-auto sm:h-10"
+                        className="h-10 w-auto"
                         src="/icon.svg"
                         />
                     </a>
@@ -82,7 +82,7 @@ export default function Header() {
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
                       <img
-                        className="h-8 w-auto"
+                        className="h-10 w-auto"
                         src="/icon.svg"
                         alt=""
                       />

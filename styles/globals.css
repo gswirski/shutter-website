@@ -5,3 +5,11 @@
 body {
   overscroll-behavior-x: none;
 }
+
+.default-a {
+  @apply underline-offset-2 decoration-1 text-red-600 hover:text-red-400 font-medium;
+}
+
+.default-p {
+  @apply mt-4 text-base text-gray-500;
+}

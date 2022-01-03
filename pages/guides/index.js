@@ -2,6 +2,7 @@
 import { DocumentTextIcon } from '@heroicons/react/outline'
 import Head from 'next/head'
 import Link from 'next/link'
+import Footer from '../../components/footer'
 import Menu from '../../components/menu'
 
 
@@ -59,12 +60,12 @@ export default function Guides() {
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               You can use our{' '}
               <Link href="/contact">
-                <a className="underline underline-offset-2 decoration-1 decoration-gray-400 hover:text-black hover:decoration-black">contact form</a>
+                <a className="default-a">contact form</a>
               </Link>{' '}
               or email us at{' '}
               <a
                 href="mailto:help@shutter.dev"
-                className="underline underline-offset-2 decoration-1 decoration-gray-400 hover:text-black hover:decoration-black"
+                className="default-a"
               >
                 help@shutter.dev
               </a>
@@ -81,7 +82,7 @@ export default function Guides() {
                       <feature.icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <Link href={feature.href} key={feature.name}>
-                      <a className="block ml-16 text-xl font-bold tracking-normal leading-6 text-gray-800 underline underline-offset-2 decoration-1 decoration-gray-600 hover:text-black hover:decoration-black">
+                      <a className="block ml-16 text-xl font-bold tracking-normal leading-6 text-gray-800 underline underline-offset-2 decoration-1 decoration-gray-300 hover:text-black hover:decoration-black">
                         {feature.name}
                       </a>
                     </Link>
@@ -93,6 +94,8 @@ export default function Guides() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   )
 }
