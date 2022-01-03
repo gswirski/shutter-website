@@ -43,7 +43,7 @@ const sonyCameras = sonyList
 
 const canonList = [
   'EOS R', 'EOS Ra', 'EOS RP', 'EOS R3', 'EOS R5', 'EOS R6',
-  'EOS M10', 'EOS M100', 'EOS M200', 'EOS M5', 'EOS M50 (EOS Kiss M)', 'EOS M50 II (EOS Kiss M2)',
+  'EOS M10', 'EOS M100', 'EOS M200', 'EOS M5', 'EOS M50', 'EOS Kiss M', 'EOS M50 II', 'EOS Kiss M2',
   'EOS M6', 'EOS M6 II'
 ];
 

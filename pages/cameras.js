@@ -121,10 +121,20 @@ export default function Cameras() {
                           <td className="px-6 py-4 whitespace-nowrap">
                             <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap">
-                          { camera.focus == 'normal' || camera.focus == 'tracking'
-                              ? <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
-                              : <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
+                          <td className="px-6 py-4 whitespace-nowrap text-center">
+                            { camera.focus == 'spot-required' &&
+                              <span className="border-b-2 border-gray-500 border-dotted inline-block has-tooltip">
+                                <span className="tooltip text-gray-500 text-sm">
+                                  AF Area must be set to "Spot", "Expand<br />Spot" or "Tracking Spot" in camera.
+                                </span>
+                                <CheckIcon className="w-6 h-6 text-green-600 mx-auto inline-block" /> *
+                              </span>
+                            }
+                            { (camera.focus == 'normal' || camera.focus == 'tracking') &&
+                              <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />}
+
+                            { (camera.focus == 'none') &&
+                              <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
                           { camera.video
@@ -142,7 +152,7 @@ export default function Cameras() {
                               : <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                            <a href="#" className="text-gray-300 hover:text-gray-500">
+                            <a href={camera.download} className="text-gray-300 hover:text-gray-500">
                               <DownloadIcon className="h-6 w-6" aria-hidden="true" />
                             </a>
                           </td>
