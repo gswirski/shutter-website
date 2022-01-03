@@ -125,7 +125,7 @@ export default function Cameras() {
                             { camera.focus == 'spot-required' &&
                               <span className="border-b-2 border-gray-500 border-dotted inline-block has-tooltip">
                                 <span className="tooltip text-gray-500 text-sm">
-                                  AF Area must be set to "Spot", "Expand<br />Spot" or "Tracking Spot" in camera.
+                                  AF Area must be set to "Spot", "Expand<br />Spot" or "Tracking Spot" in the camera.
                                 </span>
                                 <CheckIcon className="w-6 h-6 text-green-600 mx-auto inline-block" /> *
                               </span>
