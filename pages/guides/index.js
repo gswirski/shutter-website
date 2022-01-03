@@ -2,7 +2,7 @@
 import { DocumentTextIcon } from '@heroicons/react/outline'
 import Head from 'next/head'
 import Link from 'next/link'
-import Menu from '../components/menu'
+import Menu from '../../components/menu'
 
 
 const features = [
@@ -81,7 +81,7 @@ export default function Guides() {
                       <feature.icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <Link href={feature.href} key={feature.name}>
-                      <a className="ml-16 text-xl font-bold tracking-normal leading-6 text-gray-800 underline underline-offset-2 decoration-1 decoration-gray-600 hover:text-black hover:decoration-black">
+                      <a className="block ml-16 text-xl font-bold tracking-normal leading-6 text-gray-800 underline underline-offset-2 decoration-1 decoration-gray-600 hover:text-black hover:decoration-black">
                         {feature.name}
                       </a>
                     </Link>
