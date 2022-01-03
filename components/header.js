@@ -3,13 +3,14 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navigation = [
-  { name: 'Features', href: '#' },
-  { name: 'Cameras', href: '#' },
-  { name: 'Guides', href: '#' },
-  { name: 'FAQ', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Features', href: '/' },
+  { name: 'Cameras', href: '/cameras' },
+  { name: 'Guides', href: '/guides' },
+  { name: 'FAQ', href: '/guides/faq' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export default function Header() {
@@ -32,11 +33,11 @@ export default function Header() {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="#">
+                    <a href="/">
                       <span className="sr-only">Shutter</span>
                       <img
                         className="h-8 w-auto sm:h-10"
-                        src="https://i0.wp.com/shutter.dev/wp-content/uploads/2021/01/screenshot-2021-01-02-at-15.52.05.png?resize=117%2C117&ssl=1"
+                        src="/icon.svg"
                         />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
@@ -49,13 +50,17 @@ export default function Header() {
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
-                      {item.name}
-                    </a>
+                    <Link key={item.name} href={item.href}>
+                      <a className="font-medium text-gray-500 hover:text-gray-900">
+                        {item.name}
+                      </a>
+                    </Link>
                   ))}
-                  <a href="#" className="font-medium text-red-600 hover:text-red-400">
-                    Buy Now
-                  </a>
+                  <Link href="/buy">
+                    <a className="font-medium text-red-600 hover:text-red-400">
+                      Buy Now
+                    </a>
+                  </Link>
                 </div>
               </nav>
             </div>
@@ -91,21 +96,22 @@ export default function Header() {
                   </div>
                   <div className="px-2 pt-2 pb-3 space-y-1">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       >
-                        {item.name}
-                      </a>
+                        <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                          {item.name}
+                        </a>
+                      </Link>
                     ))}
                   </div>
-                  <a
-                    href="#"
-                    className="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100"
-                  >
-                    Buy Now
-                  </a>
+                  <Link href="/buy">
+                    <a className="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100"
+                    >
+                      Buy Now
+                    </a>
+                  </Link>
                 </div>
               </Popover.Panel>
             </Transition>
@@ -113,7 +119,7 @@ export default function Header() {
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
                 Better iPhone app
               </h1>
               <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
