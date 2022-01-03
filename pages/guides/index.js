@@ -28,9 +28,9 @@ const features = [
     href: "/update"
   },
   {
-    name: 'How to focus with the Sony a7III',
+    name: 'How to focus with the Sony a7 III',
     description:
-      "… or a6100, a6400, a6600, a7RIII. Unfortunately, these cameras don’t allow remote apps like Imaging Edge Mobile or Shutter to control focus points. This is a hardware limitation that no remote app can work around.      This doesn’t mean you cannot take sharp pictures. Read on this guide to learn more.            ",
+      "… or a7R III, a6100, a6400, a6600. Unfortunately, these cameras don’t allow remote apps like Imaging Edge Mobile or Shutter to control focus points. This is a hardware limitation that no remote app can work around.      This doesn’t mean you cannot take sharp pictures. Read on this guide to learn more.            ",
     icon: DocumentTextIcon,
     href: "/guides/focus"
   },
