@@ -11,11 +11,42 @@ export default function Contact() {
   const [camera, setCamera] = useState("");
   const [message, setMessage] = useState("");
 
+  const [errors, setErrors] = useState({});
+
+  const handleValidation = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    if (name.length <= 0) {
+      tempErrors["name"] = "required";
+      isValid = false;
+    }
+    if (email.length <= 0) {
+      tempErrors["email"] = "required";
+      isValid = false;
+    } else if (!email.match(/.+@.+\..+/)) {
+      tempErrors["email"] = "invalid";
+      isValid = false;
+    }
+    if (camera.length <= 0) {
+      tempErrors["camera"] = "required";
+      isValid = false;
+    }
+    if (message.length <= 0) {
+      tempErrors["message"] = "required";
+      isValid = false;
+    }
+
+    setErrors(tempErrors);
+    return isValid;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    //let isValidForm = handleValidation();
+    let isValidForm = handleValidation();
 
+    if (isValidForm) {
       const res = await fetch("/api/sendgrid", {
         body: JSON.stringify({
             email: email,
@@ -34,6 +65,7 @@ export default function Contact() {
         console.log(error);
         return;
       }
+    }
   };
 
 
@@ -63,19 +95,18 @@ export default function Contact() {
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             You can email us at <a href="mailto:help@shutter.dev" className="default-a">help@shutter.dev</a> or use the contact form below.
             </p>
-
-
-
-
           </div>
 
           <form onSubmit={handleSubmit}>
               <div className="shadow overflow-hidden sm:rounded-md">
                 <div className="px-4 py-5 bg-white sm:p-6">
+                  <p className="text-gray-500 text-base italic mb-4">All fields are required.</p>
                   <div className="grid grid-cols-6 gap-6">
                     <div className="col-span-6">
-                      <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
-                        Email address
+                      <label htmlFor="email-address" className={`block text-sm font-medium ${errors["email"] ? "text-red-700": "text-gray-700"}`}>
+                        Email address{' '}
+                        { errors["email"] &&
+                          <span className="font-regular">is {errors["email"]}</span>}
                       </label>
                       <input
                         type="text"
@@ -83,13 +114,15 @@ export default function Contact() {
                         id="email-address"
                         autoComplete="email"
                         onChange={(e) => setEmail(e.target.value)}
-                        className="mt-1 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className={`mt-1 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm sm:text-sm ${errors["email"] ? "border-red-300" : "border-gray-300"} rounded-md`}
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-3">
-                      <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                        Name
+                    <label htmlFor="first-name" className={`block text-sm font-medium ${errors["name"] ? "text-red-700": "text-gray-700"}`}>
+                        Name{' '}
+                        { errors["name"] &&
+                          <span className="font-regular">is {errors["name"]}</span>}
                       </label>
                       <input
                         type="text"
@@ -97,13 +130,15 @@ export default function Contact() {
                         id="first-name"
                         autoComplete="given-name"
                         onChange={(e) => setName(e.target.value)}
-                        className="mt-1 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className={`mt-1 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm sm:text-sm ${errors["name"] ? "border-red-300" : "border-gray-300"} rounded-md`}
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-3">
-                      <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                        Camera Model
+                    <label htmlFor="camera-model" className={`block text-sm font-medium ${errors["name"] ? "text-red-700": "text-gray-700"}`}>
+                        Camera Model{' '}
+                        { errors["camera"] &&
+                          <span className="font-regular">is {errors["camera"]}</span>}
                       </label>
                       <input
                         type="text"
@@ -111,20 +146,22 @@ export default function Contact() {
                         id="camera-model"
                         autoComplete="camera-model"
                         onChange={(e) => setCamera(e.target.value)}
-                        className="mt-1 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className={`mt-1 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm sm:text-sm ${errors["camera"] ? "border-red-300" : "border-gray-300"} rounded-md`}
                       />
                     </div>
 
 
                     <div className="col-span-6">
-                      <label htmlFor="message-text" className="block text-sm font-medium text-gray-700">
-                        Message
+                    <label htmlFor="message-text" className={`block text-sm font-medium ${errors["name"] ? "text-red-700": "text-gray-700"}`}>
+                        Message{' '}
+                        { errors["message"] &&
+                          <span className="font-regular">is {errors["message"]}</span>}
                       </label>
                       <textarea
                         name="message-text"
                         id="message-text"
                         onChange={(e) => setMessage(e.target.value)}
-                        className="h-32 mt-1 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className={`h-32 mt-1 focus:ring-red-500 focus:border-red-500 block w-full shadow-sm sm:text-sm ${errors["message"] ? "border-red-300" : "border-gray-300"} rounded-md`}
                         ></textarea>
                     </div>
                   </div>
