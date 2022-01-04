@@ -142,7 +142,7 @@ export default function Header() {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="#reviews"
+                    href="https://apps.apple.com/us/app/shutter-camera-remote/id1459044148?ls=1#see-all/reviews"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-900 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg"
                   >
                     Customer Reviews
