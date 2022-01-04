@@ -24,16 +24,15 @@ export default function Guides() {
               </a>
             </Link>
             <p className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Update Sony’s Smart Remote Control
+            How To Connect
             </p>
 
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto lg:text-center">
-              Some Sony cameras require a software update to allow for exposure and focus controls. This document will walk you through the update process to unlock all Shutter features.
+            We’ve designed Shutter to be as easy to connect as possible. If you are using an iPhone 7 or newer, you should be able to connect with your Sony Alpha or Cyber-shot simply by touching the NFC logo (little “N” mark) printed on the side of the camera.
             </p>
           </div>
           <div className='prose mx-auto'>
 
-<p>We’ve designed Shutter to be as easy to connect as possible. If you are using an iPhone 7 or newer, you should be able to connect with your Sony Alpha or Cyber-shot simply by touching the NFC logo (little “N” mark) printed on the side of the camera.</p>
 
 
 
