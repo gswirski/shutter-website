@@ -9,7 +9,7 @@ export default function Buy() {
     <div>
       <Head>
         <title>Shutter</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
       </Head>
 
       <Menu />
