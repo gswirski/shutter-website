@@ -10,6 +10,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [camera, setCamera] = useState("");
   const [message, setMessage] = useState("");
+  const [sendState, setSendState] = useState("idle");
 
   const [errors, setErrors] = useState({});
 
@@ -47,6 +48,8 @@ export default function Contact() {
     let isValidForm = handleValidation();
 
     if (isValidForm) {
+      setSendState("sending")
+
       const res = await fetch("/api/sendgrid", {
         body: JSON.stringify({
             email: email,
@@ -62,8 +65,9 @@ export default function Contact() {
 
       const { error } = await res.json();
       if (error) {
-        console.log(error);
-        return;
+        setSendState("error")
+      } else {
+        setSendState("success")
       }
     }
   };
@@ -97,7 +101,15 @@ export default function Contact() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit}>
+          {sendState == "success" &&
+            <div className="shadow overflow-hidden sm:rounded-md">
+              <div className="px-4 py-5 bg-green-50 sm:p-6">
+                <p className="text-green-700 text-base italic">Message successfully sent. We will get back to you shortly.</p>
+              </div>
+            </div>}
+
+          {sendState != "success" &&
+            <form onSubmit={handleSubmit}>
               <div className="shadow overflow-hidden sm:rounded-md">
                 <div className="px-4 py-5 bg-white sm:p-6">
                   <p className="text-gray-500 text-base italic mb-4">All fields are required.</p>
@@ -167,17 +179,18 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                  {sendState == "error" &&
+                    <span className="text-red-700 text-sm mr-4">Error sending. Please try again.</span>}{' '}
                   <button
+                    disabled={sendState == "sending"}
                     type="submit"
-                    className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black bg-gray-300 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                    className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black disabled:text-gray-700 bg-gray-300 hover:bg-gray-200 disabled:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                   >
-                    Submit
+                    {sendState == "sending" ? "Sending..." : "Submit"}
                   </button>
                 </div>
               </div>
-            </form>
-
-
+            </form>}
         </div>
       </div>
 
