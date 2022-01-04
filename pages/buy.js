@@ -28,28 +28,28 @@ export default function Buy() {
           </div>
 
           <div className="mt-6 space-y-12 space-y-0 grid grid-cols-2 gap-x-6">
-            <div className="group relative">
+            <a href="https://apps.apple.com/us/app/shutter-camera-remote/id1459044148?ls=1" className="group relative">
               <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-40 lg:aspect-w-1 lg:aspect-h-1">
                 <img
                   className="h-36 w-auto mx-auto"
-                  src="/icon.svg"
+                  src="/sony_icon.svg"
                   />              </div>
-              <p className="mt-6 text-xl font-bold text-gray-900 text-center">
-                Shutter for <span className="text-red-600">Sony</span> cameras
+              <p className="text-xl font-bold text-gray-900 text-center group-hover:underline underline-offset-4 decoration-1 decoration-gray-400">
+                <span className="text-orange-600">Sony</span> cameras
               </p>
-            </div>
+            </a>
 
-            <div className="group relative">
+            <a href="https://apps.apple.com/us/app/shutter-canon-eos-remote/id1562636889" className="group relative">
               <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-40 lg:aspect-w-1 lg:aspect-h-1">
                 <img
                   className="h-36 w-auto mx-auto"
                   src="/icon.svg"
                   />
               </div>
-              <p className="mt-6 text-xl font-bold text-gray-900 text-center">
-                Shutter for <span className="text-red-600">Canon</span> cameras
+              <p className="text-xl font-bold text-gray-900 text-center group-hover:underline underline-offset-4 decoration-1 decoration-gray-400">
+                <span className="text-red-600">Canon</span> cameras
               </p>
-            </div>
+            </a>
 
           </div>
 
