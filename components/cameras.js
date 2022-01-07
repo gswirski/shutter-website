@@ -1,5 +1,5 @@
 const sonyList = [
-  'a1', 'a9', 'a9 II', 'a7', 'a7 II', 'a7 III', 'a7 IV', 'a7R', 'a7R II', 'a7R III', 'a7R IV',
+  'a1', 'a9', 'a9 II', 'a7', 'a7 II', 'a7 III', 'a7 IV', 'a7C', 'a7R', 'a7R II', 'a7R III', 'a7R IV',
   'a7S', 'a7S II', 'a7S III', 'a5000', 'a5100', 'a6000', 'a6100', 'a6300', 'a6400', 'a6500', 'a6600',
   'FX3', 'RX1 II', 'RX10 II', 'RX10 III', 'RX10 IV', 'RX100 III', 'RX100 IV', 'RX100 V', 'RX100 VI',
   'RX100 VII', 'HX400V', 'HX60V', 'HX80', 'HX90V', 'WX500', 'NEX-5R', 'NEX-5T', 'NEX-6',
@@ -7,7 +7,7 @@ const sonyList = [
 ];
 
 const noFocus = ['a7 III', 'a7R III', 'a6100', 'a6400', 'a6600'];
-const noWideFocus = ['a9', 'a9 II', 'a7R IV', 'a7S III', 'FX3', 'RX100 VII', 'ZV-E10'];
+const noWideFocus = ['a9', 'a9 II', 'a7C', 'a7R IV', 'a7S III', 'FX3', 'RX100 VII', 'ZV-1', 'ZV-E10'];
 const trackingFocus = ['a1', 'a7 IV'];
 const noVideo = ['a7', 'a7R', 'a5000', 'a6000', 'RX1 II'];
 const noBurst = ['a7', 'a7R', 'a7S', 'a5000', 'a5100', 'a6000', 'RX100 III', 'HX400V', 'NEX-5R', 'NEX-5T', 'NEX=6'];
