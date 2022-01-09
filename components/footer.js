@@ -11,19 +11,15 @@ const navigation = [
 
 export default function Footer() {
     return (
-        <footer className="flex items-center justify-center w-full h-24 border-t">
-        <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-          <span className="text-gray-400">&copy; 2022 Camera Control Apps sp. z o.o.</span>
-          {/*<div className="md:ml-10 md:pr-4 md:space-x-8">
-            {navigation.map((item) => (
-              <Link key={item.name} href={item.href}>
-                <a className="font-medium text-gray-500 hover:text-gray-900">
-                  {item.name}
-                </a>
-              </Link>
-            ))}
-            </div>*/}
-        </nav>
-      </footer>
+      <footer className="" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">
+        Footer
+      </h2>
+      <div className="max-w-md mx-auto pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8">
+        <div className="mt-12 border-t border-gray-200 py-8">
+          <p className="text-base text-gray-400 xl:text-center">&copy; 2022 Camera Control Apps sp. z o.o.</p>
+        </div>
+      </div>
+    </footer>
     )
 }
