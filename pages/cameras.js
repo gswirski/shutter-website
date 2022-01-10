@@ -1,9 +1,9 @@
 import { DownloadIcon, SearchIcon, CheckIcon, XIcon, ExclamationIcon } from "@heroicons/react/outline"
-import Head from "next/head"
 import Link from "next/link"
 import { useState } from "react"
 import { cameras } from "../components/cameras"
 import Footer from "../components/footer"
+import ShutterHead from "../components/head"
 import Menu from "../components/menu"
 
 function SearchBar({onChange}) {
@@ -35,11 +35,7 @@ export default function Cameras() {
 
   return (
     <div>
-      <Head>
-        <title>Shutter</title>
-        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-      </Head>
-
+      <ShutterHead />
       <Menu />
 
       <div className="py-12 bg-white">

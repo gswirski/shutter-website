@@ -1,19 +1,14 @@
 
-/* This example requires Tailwind CSS v2.0+ */
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '../../components/footer'
+import ShutterHead from '../../components/head'
 import Menu from '../../components/menu'
 
 export default function Guides() {
   return (
     <div>
-      <Head>
-        <title>Shutter</title>
-        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-      </Head>
-
+      <ShutterHead />
       <Menu />
 
       <div className="py-12 bg-white">

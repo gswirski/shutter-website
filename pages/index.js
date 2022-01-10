@@ -1,15 +1,12 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../components/footer'
+import ShutterHead from '../components/head'
 import Header from '../components/header'
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Shutter</title>
-        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-      </Head>
+      <ShutterHead />
 
       <Header />
       <main>
@@ -213,10 +210,7 @@ export default function Home() {
         <div className="lg:w-0 lg:flex-1">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Satisfaction Guaranteed</h2>
           <p className="mt-3 max-w-3xl text-lg text-gray-500">
-          Still not convinced? Why don’t give Shutter a try and return it if you don’t like it?
-          </p>
-          <p className="mt-3 max-w-3xl text-lg text-gray-500">
-          If you are unhappy with the product, for whatever reason, you can always 
+          Still not convinced? You can give Shutter a try and return it if you don’t like it! If you are unhappy with the product, for whatever reason, you can 
           <a className="underline text-black" href="https://support.apple.com/en-us/HT204084">request a refund</a> within 7 days of the purchase.
           </p>
         </div>
@@ -293,7 +287,9 @@ export default function Home() {
                     About Us
                   </h2>
                   <p className="text-lg text-blue-gray-700">
-                  We love traveling to secluded places. We also love capturing beautiful moments. But sometimes, when no one is around, it’s hard to get a perfect picture of both of us.
+                    We're Kalina &amp; Grzegorz, and we love traveling to secluded places.
+                    We also love capturing beautiful moments.
+                    Sometimes, when no one is around, it was hard to get a perfect picture of both of us.
                   </p>
                   <p className="text-lg text-blue-gray-700">
 
