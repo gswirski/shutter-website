@@ -25,7 +25,7 @@ export default function Buy() {
 
           <div className="mt-6 space-y-12 space-y-0 grid grid-cols-2 gap-x-6">
             <a href="https://apps.apple.com/us/app/shutter-camera-remote/id1459044148?ls=1" className="group relative">
-              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-40 lg:aspect-w-1 lg:aspect-h-1">
+              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-40">
                 <img
                   className="h-36 w-auto mx-auto"
                   src="/sony_icon.svg"
@@ -36,7 +36,7 @@ export default function Buy() {
             </a>
 
             <a href="https://apps.apple.com/us/app/shutter-canon-eos-remote/id1562636889" className="group relative">
-              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-40 lg:aspect-w-1 lg:aspect-h-1">
+              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-40">
                 <img
                   className="h-36 w-auto mx-auto"
                   src="/icon.svg"
