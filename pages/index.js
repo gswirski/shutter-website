@@ -146,7 +146,7 @@ export default function Home() {
       <h2 className="text-center text-3xl font-extrabold text-gray-100 sm:text-4xl pt-12 md:pt-16" id="customer-reviews">Customer Reviews</h2>
 
       <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
-        <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-blue-gray-900 lg:pr-16">
+        <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-slate-900 lg:pr-16">
           <p className='text-gray-100 font-extrabold text-lg'>
           Shutter gives us the features Sony left out
           </p>
@@ -169,7 +169,7 @@ export default function Home() {
             </footer>
           </blockquote>
         </div>
-        <div className="py-12 px-4 border-t-2 border-blue-gray-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
+        <div className="py-12 px-4 border-t-2 border-slate-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
         <p className='text-gray-100 font-extrabold text-lg'>
         Works great while hiking
           </p>
@@ -220,7 +220,7 @@ export default function Home() {
         {/* CTA Section */}
         <section className="relative bg-white" aria-labelledby="join-heading">
           <div className="hidden absolute inset-x-0 h-1/2 bg-white lg:block" aria-hidden="true" />
-          <div className="max-w-7xl mx-auto bg-blue-gray-300 lg:bg-transparent lg:px-8">
+          <div className="max-w-7xl mx-auto bg-slate-300 lg:bg-transparent lg:px-8">
             <div className="lg:grid lg:grid-cols-12">
               <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                 <div className="absolute inset-x-0 h-1/2 bg-white lg:hidden" aria-hidden="true" />
@@ -235,7 +235,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative bg-blue-gray-300 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+              <div className="relative bg-slate-300 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
                 <div className="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block" aria-hidden="true">
                   <svg
                     className="absolute bottom-full left-full transform translate-y-1/3 -translate-x-2/3 xl:bottom-auto xl:top-0 xl:translate-y-0"
@@ -254,7 +254,7 @@ export default function Home() {
                         height={20}
                         patternUnits="userSpaceOnUse"
                       >
-                        <rect x={0} y={0} width={4} height={4} className="text-blue-gray-200" fill="currentColor" />
+                        <rect x={0} y={0} width={4} height={4} className="text-slate-200" fill="currentColor" />
                       </pattern>
                     </defs>
                     <rect width={404} height={384} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
@@ -283,15 +283,15 @@ export default function Home() {
                   </svg>
                 </div>
                 <div className="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-                  <h2 className="text-3xl font-extrabold text-blue-gray-900" id="join-heading">
+                  <h2 className="text-3xl font-extrabold text-slate-900" id="join-heading">
                     About Us
                   </h2>
-                  <p className="text-lg text-blue-gray-700">
+                  <p className="text-lg text-slate-700">
                     We're Kalina &amp; Grzegorz, and we love traveling to secluded places.
                     We also love capturing beautiful moments.
                     Sometimes, when no one is around, it was hard to get a perfect picture of both of us.
                   </p>
-                  <p className="text-lg text-blue-gray-700">
+                  <p className="text-lg text-slate-700">
 
 That’s why we’ve created Shutter – to make our travel photography easier. It started as a passion project after a visit to the beautiful Swiss Alps. It’s been a faithful companion on countless trips. We even used it to photograph our engagement!
                   </p>
