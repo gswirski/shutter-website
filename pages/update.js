@@ -40,7 +40,7 @@ export default function Guides() {
 
 
 
-            <ul class="has-normal-font-size"><li><a href="https://www.playmemoriescameraapps.com/portal/usbdetail.php?eid=IS9104-NPIA09014_00-F00002">Navigate to Sony’s PlayMemories website.</a></li><li>Click the “Install” button on the left.</li><li>Follow the instructions provided by Sony.</li></ul>
+            <ul><li><a href="https://www.playmemoriescameraapps.com/portal/usbdetail.php?eid=IS9104-NPIA09014_00-F00002">Navigate to Sony’s PlayMemories website.</a></li><li>Click the “Install” button on the left.</li><li>Follow the instructions provided by Sony.</li></ul>
 
 
 
@@ -64,7 +64,7 @@ export default function Guides() {
 
 
 
-            <ol class="has-normal-font-size"><li>Make sure you select a region that matches your current location. Otherwise, you might be unable to log in.</li><li>Pick an easy password. You’ll need to enter it in camera. You can change it to something more secure after the upgrade.</li><li>Sony will send you an email. Make sure to follow the confirmation link from that email.&nbsp;<strong>Skip 2 factor authentication and phone number verification.</strong></li></ol>
+            <ol><li>Make sure you select a region that matches your current location. Otherwise, you might be unable to log in.</li><li>Pick an easy password. You’ll need to enter it in camera. You can change it to something more secure after the upgrade.</li><li>Sony will send you an email. Make sure to follow the confirmation link from that email.&nbsp;<strong>Skip 2 factor authentication and phone number verification.</strong></li></ol>
 
 
 
@@ -76,7 +76,7 @@ export default function Guides() {
 
 
 
-            <ol class="has-normal-font-size"><li>Make sure your camera’s time and region are correct. Otherwise you won’t be able to connect to Sony website. To set time in camera: “Menu” → toolbox icon (the last one) → Area and time → set accordingly</li><li>Go back to the main menu → 4th tab with little squares → “Application List”</li><li>Select “PlayMemories Camera Apps”</li><li>Connect to your home Wi-Fi<ol><li>Click “Network Settings”</li><li>“Access Point Set.”</li><li>Select your Wi-Fi name</li><li>Enter password and click “OK”</li></ol></li><li>Once connected to the Wi-Fi network, you should see the “PlayMemories Camera Apps” website with “Smart Remote Control” and “Update” buttons. Click on the “Update”.</li><li>Click “Update” again</li><li>You should be presented with a question: “You must have a Sony account. Do you have one?”. Choose “Yes”.</li><li>Enter the login and password that you’ve created earlier.</li><li>Click “Agree and continue”.</li><li>Start the update process. It should take about 5 minutes.</li></ol>
+            <ol><li>Make sure your camera’s time and region are correct. Otherwise you won’t be able to connect to Sony website. To set time in camera: “Menu” → toolbox icon (the last one) → Area and time → set accordingly</li><li>Go back to the main menu → 4th tab with little squares → “Application List”</li><li>Select “PlayMemories Camera Apps”</li><li>Connect to your home Wi-Fi<ol><li>Click “Network Settings”</li><li>“Access Point Set.”</li><li>Select your Wi-Fi name</li><li>Enter password and click “OK”</li></ol></li><li>Once connected to the Wi-Fi network, you should see the “PlayMemories Camera Apps” website with “Smart Remote Control” and “Update” buttons. Click on the “Update”.</li><li>Click “Update” again</li><li>You should be presented with a question: “You must have a Sony account. Do you have one?”. Choose “Yes”.</li><li>Enter the login and password that you’ve created earlier.</li><li>Click “Agree and continue”.</li><li>Start the update process. It should take about 5 minutes.</li></ol>
 
 
 

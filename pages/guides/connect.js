@@ -72,7 +72,7 @@ NFC logo on the side of the camera and touch it with the top edge of your iPhone
     </div>
 </div>
 
-<p class="has-text-align-center">When you click “Tap to connect”, you will be prompted to touch the camera with your phone. </p>
+<p>When you click “Tap to connect”, you will be prompted to touch the camera with your phone. </p>
 
 
 
@@ -93,13 +93,13 @@ NFC logo on the side of the camera and touch it with the top edge of your iPhone
                 objectFit='scale-down'/>
     </div>
     <div className='col-1 relative'>
-    <p class="has-secondary-color has-text-color"><strong>Technical Note: </strong>Sony cameras use Wi-Fi to communicate with remote devices. This doesn’t mean that you need to stay at home or office to use the app. The camera generates its own network that can be used anywhere you want.</p>
+    <p><strong>Technical Note: </strong>Sony cameras use Wi-Fi to communicate with remote devices. This doesn’t mean that you need to stay at home or office to use the app. The camera generates its own network that can be used anywhere you want.</p>
     </div>
 </div>
 
 
 
-<p class="wp-block-coblocks-highlight">On some iOS 14/15 devices, the initial connection attempt might fail and display a “Unable to join the network” error. When that happens, click “Tap to connect” again, touch the “N” mark and click “Join” again. It always succeeds on the second try.</p>
+<p>On some iOS 14/15 devices, the initial connection attempt might fail and display a “Unable to join the network” error. When that happens, click “Tap to connect” again, touch the “N” mark and click “Join” again. It always succeeds on the second try.</p>
 
 
 
@@ -190,7 +190,7 @@ If you see a green Network icon
 
 
 
-<p class="wp-block-coblocks-highlight"><mark class="wp-block-coblocks-highlight__content"><a href="https://shutter.dev/update/" data-type="page" data-id="62">If all exposure settings are disabled in Shutter app, please update "Smart Remote Control" app in camera. Follow official Sony instructions on how to upgrade camera software.</a></mark></p>
+<p><mark><a href="https://shutter.dev/update/" data-type="page" data-id="62">If all exposure settings are disabled in Shutter app, please update "Smart Remote Control" app in camera. Follow official Sony instructions on how to upgrade camera software.</a></mark></p>
 
 
 

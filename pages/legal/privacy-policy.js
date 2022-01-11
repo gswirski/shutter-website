@@ -16,7 +16,7 @@ export default function Guides() {
             </p>
           </div>
           <div className='prose mx-auto'>
-          <div class="entry-content">
+          <div className="entry-content">
 		
         <p>Camera Control Apps sp. z o.o. built the Shutter — Camera Remote app as a Commercial app. This SERVICE is provided by Camera Control Apps sp. z o.o. and is intended for use as is.</p>
         
