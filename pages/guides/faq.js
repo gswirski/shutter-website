@@ -72,6 +72,10 @@ always recommend a dedicated card reader ([like the one directly from Apple](htt
     answer: "Simply contact us at [help@shutter.dev](mailto:help@shutter.dev) or [use the web form](/contact). We love feedback. Please make sure you attach as many details as you can. What is your camera, what is your use case (real-estate, astrophotography, photographing birds…), what would be required to make your work easier…"
     },
   {
+    question: "Is it a subscription or a one-time purchase?",
+    answer: "Shutter is a one-time purchase with no recurring subscription. When you make a purchase, you have access on all of your devices, forever."
+  },
+  {
     question: "I want a refund.",
     answer: "No problem. We would love your feedback and a chance to fix the issue first. If you don’t want to wait, you can [request a refund here.](https://support.apple.com/en-us/HT204084)"
   },
