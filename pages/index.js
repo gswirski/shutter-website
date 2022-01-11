@@ -226,11 +226,14 @@ export default function Home() {
                 <div className="absolute inset-x-0 h-1/2 bg-white lg:hidden" aria-hidden="true" />
                 <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
                   <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-                    <img
-                      className="object-cover object-center rounded-3xl shadow-2xl"
-                      src="/DSC09268.jpg"
-                      alt=""
-                    />
+                    <div className="object-cover object-center rounded-3xl shadow-2xl overflow-hidden">
+                      <Image
+                        objectFit='cover'
+                        objectPosition="center"
+                        src="/DSC09268.jpg"
+                        layout="fill"
+                        alt=""
+                    /></div>
                   </div>
                 </div>
               </div>
