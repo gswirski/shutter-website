@@ -17,9 +17,9 @@ export default function Guides() {
                 Guides
               </a>
             </Link>
-            <p className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               How to focus without "tap to focus"
-            </p>
+            </h2>
 
             <p className="mt-4 max-w-lg text-xl text-gray-500 lg:mx-auto lg:text-center">
               For users of Sony a6100, a6400, a6600, a7 III, a7R III.

@@ -18,9 +18,9 @@ export default function Guides() {
                 Guides
               </a>
             </Link>
-            <p className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Update Sony’s Smart Remote Control
-            </p>
+            </h2>
 
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto lg:text-center">
               Some Sony cameras require a software update to allow for exposure and focus controls. This document will walk you through the update process to unlock all Shutter features.

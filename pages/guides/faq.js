@@ -105,9 +105,9 @@ export default function Guides() {
                 Guides
               </a>
             </Link>
-            <p className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Frequently Asked Questions
-            </p>
+            </h2>
 
             <p className="mt-4 max-w-lg text-xl text-gray-500 lg:mx-auto lg:text-center">
               Can't find the answer you are looking for? Reach out to our{' '}
