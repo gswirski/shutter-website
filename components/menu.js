@@ -51,7 +51,7 @@ export default function Menu() {
                   ))}
                   <Link href="/buy">
                     <a className="font-medium text-red-600 hover:text-red-400">
-                      Buy Now
+                      Download
                     </a>
                   </Link>
                 </div>
@@ -104,7 +104,7 @@ export default function Menu() {
                   <Link href="/buy">
                     <a className="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100"
                     >
-                      Buy Now
+                      Download
                     </a>
                   </Link>
                 </div>

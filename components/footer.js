@@ -6,7 +6,7 @@ const navigation = [
     { name: 'Guides', href: '/guides' },
     { name: 'FAQ', href: '/guides/faq' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Buy Now', href: '/buy' }
+    { name: 'Download', href: '/buy' }
   ]
 
 export default function Footer() {

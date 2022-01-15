@@ -61,7 +61,7 @@ export default function Header() {
                   ))}
                   <Link href="/buy">
                     <a className="font-medium text-red-600 hover:text-red-400">
-                      Buy Now
+                      Download
                     </a>
                   </Link>
                 </div>
@@ -114,7 +114,7 @@ export default function Header() {
                   <Link href="/buy">
                     <a className="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100"
                     >
-                      Buy Now
+                      Download
                     </a>
                   </Link>
                 </div>
@@ -137,21 +137,23 @@ export default function Header() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Link href="/cameras">
+                  <Link href="/buy">
                     <a
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg"
                     >
-                      Supported Cameras
+                      Download Shutter
                     </a>
                   </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#customer-reviews"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-900 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg"
-                  >
-                    Customer Reviews
-                  </a>
+                  <Link href="/cameras">
+                    <a
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-900 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg"
+                    >
+                      Supported Cameras
+                    </a>
+                  </Link>
+
                 </div>
               </div>
             </div>
