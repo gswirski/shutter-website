@@ -6,7 +6,7 @@ const sonyList = [
   'ZV-1', 'ZV-E10'
 ];
 
-const noFocus = ['a7 III', 'a7R III', 'a6100', 'a6400', 'a6600'];
+const noFocus = ['a7 III', 'a7R III', 'a6100', 'a6400', 'a6600', 'RX10 IV'];
 const noWideFocus = ['a9', 'a9 II', 'a7C', 'a7R IV', 'a7S III', 'FX3', 'RX100 VII', 'ZV-1', 'ZV-E10'];
 const trackingFocus = ['a1', 'a7 IV'];
 const noVideo = ['a7', 'a7R', 'a5000', 'a6000', 'RX1 II'];
