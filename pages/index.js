@@ -211,8 +211,8 @@ export default function Home() {
             <div className="lg:w-0 lg:flex-1">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Satisfaction Guaranteed</h2>
               <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                Still not convinced? You can give Shutter a try and return it if you don’t like it! If you are unhappy with the product, for whatever reason, you can
-                <a className="underline text-black" href="https://support.apple.com/en-us/HT204084">request a refund</a> within 7 days of the purchase.
+                Still not convinced? You can give Shutter a try and return it if you don’t like it! If you are unhappy with the product, for whatever reason, you can{' '}
+                <a className="underline text-black" href="https://support.apple.com/en-us/HT204084">request a refund</a>{' '}within 7 days of the purchase.
               </p>
             </div>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">

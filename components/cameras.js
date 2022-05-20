@@ -41,11 +41,31 @@ const sonyCameras = sonyList
     }
   });
 
-const canonList = [
-  'EOS R', 'EOS Ra', 'EOS RP', 'EOS R3', 'EOS R5', 'EOS R6',
-  'EOS M10', 'EOS M100', 'EOS M200', 'EOS M5', 'EOS M50', 'EOS Kiss M', 'EOS M50 II', 'EOS Kiss M2',
-  'EOS M6', 'EOS M6 II'
-];
+
+const canonEosList = [
+"R", "Ra", "RP", "R3", "R5", "R5 C", "R6",
+"M10", "M100", "M200", "M5", "M50", "M50 II", "M6", "M6 II",
+"5D IV", "6D", "6D II",
+"70D", "77D", "80D", "90D",
+"200D", "200D II", "250D", "750D", "760D", "800D", "850D",
+"1300D", "1500D", "2000D", "3000D", "4000D", "8000D", "9000D"
+]
+const canonEosKissList = [
+"M", "M2", "X10", "X10i", "X80", "X8i", "X9", "X90", "X9i"
+]
+const canonEosRebelList = [
+"SL2", "SL3", "T100", "T6", "T6i", "T6s", "T7", "T7i", "T8i"
+]
+
+const canonList = canonEosList.map(x => `EOS ${x}`)
+  .concat(canonEosKissList.map(x => `EOS Kiss ${x}`))
+  .concat(canonEosRebelList.map(x => `EOS Rebel ${x}`))
+
+// const canonList = [
+//   'EOS R', 'EOS Ra', 'EOS RP', 'EOS R3', 'EOS R5', 'EOS R6',
+//   'EOS M10', 'EOS M100', 'EOS M200', 'EOS M5', 'EOS M50', 'EOS Kiss M', 'EOS M50 II', 'EOS Kiss M2',
+//   'EOS M6', 'EOS M6 II'
+// ];
 
 const canonCameras = canonList
   .sort((a, b) => {
