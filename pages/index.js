@@ -143,7 +143,7 @@ export default function Home() {
         </section>
 
 
-        <section className="bg-gray-900 mt-24 lg:mt-32">
+        <section className="bg-gray-900 mt-24 lg:mt-32" id="testimonials">
           <h2 className="text-center text-3xl font-extrabold text-gray-100 sm:text-4xl pt-12 md:pt-16" id="customer-reviews">Customer Reviews</h2>
 
           <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
@@ -206,7 +206,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="refunds">
           <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:py-32 lg:px-8 lg:flex lg:items-center">
             <div className="lg:w-0 lg:flex-1">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Satisfaction Guaranteed</h2>
