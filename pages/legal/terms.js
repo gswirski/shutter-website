@@ -689,7 +689,7 @@ function TermsAndConditions() {
                 </Bdt>
               </span>
               <Bdt className="block-component" /> Our VAT number is{" "}
-              <Bdt className="question">PL 7011068815.</Bdt>
+              <Bdt className="question">PL 6783181942.</Bdt>
               <Bdt className="statement-end-if-in-editor" />
             </span>
           </span>{" "}
