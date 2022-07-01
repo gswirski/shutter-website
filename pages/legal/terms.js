@@ -18,6 +18,11 @@ export default function Guides() {
   )
 }
 
+function Bdt(props) {
+    return <span>{props.children}</span>
+  }
+  
+
 function TermsAndConditions() {
   return (
 <>
