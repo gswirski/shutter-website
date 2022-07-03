@@ -58,7 +58,7 @@ function TermsAndConditions() {
         <span style={{ color: "rgb(89, 89, 89)", fontSize: 15 }}>
           <span data-custom-class="body_text">
             This privacy notice for{" "}
-            <Bdt className="question">Reilabs sp. z o.o.</Bdt>
+            <Bdt className="question">Camera Control Apps sp. z o.o.</Bdt>
             <span style={{ color: "rgb(89, 89, 89)" }}>
               <span data-custom-class="body_text">
                 <Bdt className="block-component" />
@@ -103,11 +103,11 @@ function TermsAndConditions() {
               <Bdt className="block-component" /> at{" "}
               <Bdt className="question">
                 <a
-                  href="https://hexavatar.com"
+                  href="https://shutter.dev"
                   
                   data-custom-class="link"
                 >
-                  https://hexavatar.com
+                  https://shutter.dev
                 </a>
               </Bdt>
               <span style={{ fontSize: 15 }}>
@@ -190,7 +190,7 @@ function TermsAndConditions() {
               If you do not agree with our policies and practices, please do not
               use our Services. If you still have any questions or concerns,
               please contact us at{" "}
-              <Bdt className="question">help@hexavatar.com</Bdt>.
+              <Bdt className="question">help@shutter.dev</Bdt>.
             </span>
           </span>
         </span>
@@ -252,7 +252,7 @@ function TermsAndConditions() {
             visit, use, or navigate our Services, we may process personal
             information depending on how you interact with{" "}
             <Bdt className="block-component" />
-            <Bdt className="question">Reilabs sp. z o.o.</Bdt>
+            <Bdt className="question">Camera Control Apps sp. z o.o.</Bdt>
             <Bdt className="statement-end-if-in-editor" /> and the Services, the
             choices you make, and the products and features you use. Click&nbsp;
           </span>
@@ -434,7 +434,7 @@ function TermsAndConditions() {
         <span style={{ fontSize: 15 }}>
           <span data-custom-class="body_text">
             Want to learn more about what <Bdt className="block-component" />
-            <Bdt className="question">Reilabs sp. z o.o.</Bdt>
+            <Bdt className="question">Camera Control Apps sp. z o.o.</Bdt>
             <Bdt className="statement-end-if-in-editor" /> does with any
             information we collect? Click&nbsp;
           </span>
@@ -1302,11 +1302,11 @@ function TermsAndConditions() {
               <Bdt className="block-component" />
               <Bdt className="question">
                 <a
-                  href="https://hexavatar.com/legal/cookies"
+                  href="https://shutter.dev/legal/cookies"
                   
                   data-custom-class="link"
                 >
-                  https://hexavatar.com/legal/cookies
+                  https://shutter.dev/legal/cookies
                 </a>
               </Bdt>
               .<Bdt className="block-component" />
@@ -3946,11 +3946,11 @@ function TermsAndConditions() {
                                                           <span data-custom-class="body_text">
                                                             <Bdt className="question">
                                                               <a
-                                                                href="https://hexavatar.com/legal/cookies"
+                                                                href="https://shutter.dev/legal/cookies"
                                                                 
                                                                 data-custom-class="link"
                                                               >
-                                                                https://hexavatar.com/legal/cookies
+                                                                https://shutter.dev/legal/cookies
                                                               </a>
                                                             </Bdt>
                                                           </span>
@@ -6645,11 +6645,11 @@ function TermsAndConditions() {
                                                             <span data-custom-class="body_text">
                                                               <Bdt className="question">
                                                                 <a
-                                                                  href="https://hexavatar.com/legal/cookies"
+                                                                  href="https://shutter.dev/legal/cookies"
                                                                   
                                                                   data-custom-class="link"
                                                                 >
-                                                                  https://hexavatar.com/legal/cookies
+                                                                  https://shutter.dev/legal/cookies
                                                                 </a>
                                                               </Bdt>
                                                               .
@@ -6725,7 +6725,7 @@ function TermsAndConditions() {
                                                       privacy rights, you may
                                                       email us at{" "}
                                                       <Bdt className="question">
-                                                        help@hexavatar.com
+                                                        help@shutter.dev
                                                       </Bdt>
                                                       .
                                                     </span>
@@ -7311,7 +7311,7 @@ function TermsAndConditions() {
                                                             <Bdt className="block-component" />
                                                             email us at{" "}
                                                             <Bdt className="question">
-                                                              help@hexavatar.com
+                                                              help@shutter.dev
                                                             </Bdt>
                                                             <Bdt className="statement-end-if-in-editor" />
                                                           </span>
@@ -7341,11 +7341,11 @@ function TermsAndConditions() {
                                                     of your personal information
                                                     is{" "}
                                                     <Bdt className="question">
-                                                      Reilabs sp. z o.o.
+                                                      Camera Control Apps sp. z o.o.
                                                     </Bdt>
                                                     .{" "}
                                                     <Bdt className="question">
-                                                      Reilabs sp. z o.o.
+                                                      Camera Control Apps sp. z o.o.
                                                     </Bdt>{" "}
                                                     has appointed{" "}
                                                     <span
@@ -7367,7 +7367,7 @@ function TermsAndConditions() {
                                                     processing of your
                                                     information by{" "}
                                                     <Bdt className="question">
-                                                      Reilabs sp. z o.o.
+                                                      Camera Control Apps sp. z o.o.
                                                     </Bdt>
                                                     <span
                                                       style={{
@@ -7381,7 +7381,7 @@ function TermsAndConditions() {
                                                         <Bdt className="block-component" />{" "}
                                                         by email at{" "}
                                                         <Bdt className="question">
-                                                          help@hexavatar.com
+                                                          help@shutter.dev
                                                         </Bdt>
                                                         <Bdt className="statement-end-if-in-editor" />
                                                         <Bdt className="block-component" />
