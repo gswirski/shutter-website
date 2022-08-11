@@ -43,7 +43,7 @@ const sonyCameras = sonyList
 
 
 const canonEosList = [
-"R", "Ra", "RP", "R3", "R5", "R5 C", "R6",
+"R", "Ra", "RP", "R3", "R5", "R5 C", "R6", "R7", "R10",
 "M10", "M100", "M200", "M5", "M50", "M50 II", "M6", "M6 II",
 "5D IV", "6D", "6D II",
 "70D", "77D", "80D", "90D",
