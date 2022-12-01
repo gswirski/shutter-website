@@ -89,6 +89,12 @@ export default function Cameras() {
                           scope="col"
                           className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
                         >
+                          Focus Bracketing
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                        >
                           Video
                         </th>
                         <th
@@ -114,8 +120,18 @@ export default function Cameras() {
                           <td className="px-6 py-4 whitespace-nowrap">
                             <div className="text-sm font-medium text-gray-900">{camera.name}</div>
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap">
-                            <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
+                          <td className="px-6 py-4 whitespace-nowrap text-center">
+                            { camera.wrongInstructions &&
+                              <span className="border-b-2 border-gray-500 border-dotted inline-block has-tooltip">
+                                <span className="tooltip text-gray-500 text-sm">
+                                  Follow Sony a7 IV instructions.
+                                </span>
+                                <CheckIcon className="w-6 h-6 text-green-600 mx-auto inline-block" /> *
+                              </span>
+                            }
+                            { !camera.wrongInstructions &&
+                              <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
+                            }
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-center">
                             { camera.focus == 'spot-required' &&
@@ -131,6 +147,11 @@ export default function Cameras() {
 
                             { (camera.focus == 'none') &&
                               <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                          { camera.focusBracketing
+                              ? <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
+                              : <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
                           { camera.video
