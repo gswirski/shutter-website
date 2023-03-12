@@ -121,15 +121,15 @@ export default function Cameras() {
                             <div className="text-sm font-medium text-gray-900">{camera.name}</div>
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-center">
-                            { camera.wrongInstructions &&
-                              <span className="border-b-2 border-gray-500 border-dotted inline-block has-tooltip">
-                                <span className="tooltip text-gray-500 text-sm">
-                                  Follow Sony a7 IV instructions.
+                            { camera.expiredSupport &&
+                                <span className="border-b-2 border-gray-500 border-dotted inline-block has-tooltip">
+                                  <span className="tooltip text-gray-500 text-sm">
+                                    Only firmware &lt; 2.00.
+                                  </span>
+                                  <CheckIcon className="w-6 h-6 text-green-600 mx-auto inline-block" /> *
                                 </span>
-                                <CheckIcon className="w-6 h-6 text-green-600 mx-auto inline-block" /> *
-                              </span>
-                            }
-                            { !camera.wrongInstructions &&
+                              }
+                            { !camera.expiredSupport &&
                               <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
                             }
                           </td>

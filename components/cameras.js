@@ -6,7 +6,7 @@ const sonyList = [
   'ZV-1', 'ZV-E10'
 ];
 
-const a7ivInstuctions = [];
+const noLongerSupported = ['a7 IV'];
 const noFocus = ['a7 III', 'a7R III', 'a6100', 'a6400', 'a6600', 'RX10 IV'];
 const noWideFocus = ['a9', 'a9 II', 'a7C', 'a7R IV', 'a7S III', 'FX3', 'RX100 VII', 'ZV-1', 'ZV-E10'];
 const trackingFocus = ['a1', 'a7 IV'];
@@ -35,7 +35,7 @@ const sonyCameras = sonyList
     return {
       name: `Sony ${camera}`,
       support: true,
-      wrongInstructions: a7ivInstuctions.includes(camera),
+      expiredSupport: noLongerSupported.includes(camera),
       video: !noVideo.includes(camera),
       burst: !noBurst.includes(camera),
       bulb: !noBulb.includes(camera),
