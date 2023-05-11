@@ -60,16 +60,16 @@ const canonEosKissList = [
 const canonEosRebelList = [
 "SL2", "SL3", "T100", "T6", "T6i", "T6s", "T7", "T7i", "T8i"
 ]
-
+const canonPowerShotList = [
+"G1 X Mark III", "G5 X Mark II", "G7 X Mark II", "Mark III",
+"G9 X Mark II",
+"SX420 HS", "SX430 IS", "SX432 IS", "SX540 HS", "SX620 HS",
+"SX70 HS", "SX720 HS", "SX730 HS", "SX740 HS"
+]
 const canonList = canonEosList.map(x => `EOS ${x}`)
   .concat(canonEosKissList.map(x => `EOS Kiss ${x}`))
   .concat(canonEosRebelList.map(x => `EOS Rebel ${x}`))
-
-// const canonList = [
-//   'EOS R', 'EOS Ra', 'EOS RP', 'EOS R3', 'EOS R5', 'EOS R6',
-//   'EOS M10', 'EOS M100', 'EOS M200', 'EOS M5', 'EOS M50', 'EOS Kiss M', 'EOS M50 II', 'EOS Kiss M2',
-//   'EOS M6', 'EOS M6 II'
-// ];
+  .concat(canonPowerShotList.map(x => `PowerShot ${x}`))
 
 const canonCameras = canonList
   .sort((a, b) => {
@@ -88,10 +88,19 @@ const canonCameras = canonList
       burst: true,
       bulb: true,
       focus: 'normal',
+      import: true,
       download: "https://itunes.apple.com/us/app/shutter-camera-remote/id1459044148?ls=1&mt=8"
     }
   });
 
-const cameras = sonyCameras.concat(canonCameras);
+const cameras = sonyCameras
+  .concat(canonCameras)
+  .sort((a, b) => {
+    const al = a.name.toLowerCase();
+    const bl = b.name.toLowerCase();
+    if (al < bl) { return -1; }
+    if (bl > al) { return 1; }
+    return 0;
+  });
 
 export { cameras };

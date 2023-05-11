@@ -77,7 +77,13 @@ export default function Cameras() {
                           scope="col"
                           className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
                         >
-                          Supported
+                          Remote Control
+                        </th>
+                        <th
+                          scope="col"
+                          className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                        >
+                          Photo Import
                         </th>
                         <th
                           scope="col"
@@ -133,6 +139,12 @@ export default function Cameras() {
                               <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
                             }
                           </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                          { camera.import
+                              ? <CheckIcon className="w-6 h-6 text-green-600 mx-auto" />
+                              : <XIcon className="w-6 h-6 text-red-700 mx-auto" /> }
+                          </td>
+
                           <td className="px-6 py-4 whitespace-nowrap text-center">
                             { camera.focus == 'spot-required' &&
                               <span className="border-b-2 border-gray-500 border-dotted inline-block has-tooltip">
