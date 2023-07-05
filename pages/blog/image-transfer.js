@@ -75,17 +75,17 @@ export default function Guides() {
             </div>
 
             <h3 id="photo-transfer-raw-jpeg">JPEG/RAW selector</h3>
-            <p>If you shoot in RAW, Shutter gives you two options:</p>
+            <p>If you shoot RAW, Shutter gives you two options:</p>
             <ul>
-                <li>Download the original RAW image for full creative control in your favorite editor (like Photos, Lightroom or similar).</li>
+                <li>Download the original RAW image for a full creative control in your favorite editor (e.g. Photos, Lightroom or similar).</li>
                 <li>Automatically develop the image in camera, and get a JPEG file ready to be shared with your friends and family.</li>
             </ul>
 
             <h3 id="photo-transfer-photos">Photos library integration</h3>
-            <p>All photos downloaded with Shutter go directly to your Photos collection. This way they are ready to be edited with your favorite photo editor, or shared with your friends and family.</p>
+            <p>All photos downloaded with Shutter go directly to your Photos collection. This way, they are easily available in your favorite photo editor, and ready to be shared with your friends and family.</p>
 
             <h3 id="photo-transfer-speed">Faster shooting experience</h3>
-            <p>Now that photo transfer is directly integrated with our photo viewer, Shutter no longer needs to fetch photo previews immediately after shot. This means much faster shooting speed!</p>
+            <p>Now that photo transfers are directly integrated with our photo viewer, Shutter no longer needs to fetch photo previews immediately after shot. This means much faster shooting speed!</p>
 
             <h2 id="download">Download Shutter update</h2>
             <div className="grid grid-cols-3 items-center gap-4">
@@ -106,7 +106,7 @@ export default function Guides() {
             <hr />
 
 <p>So there you have it. I’m sure you are going to enjoy these updates.</p>
-<p>If you create something cool using Shutter, please share it with us. Nothing makes us happier than seeing how creative people around the world use our tools.</p>
+<p>If you created something cool using Shutter, please share it with us. Nothing makes us happier than seeing how creative people around the world use our tools.</p>
 <p>&mdash; Grzegorz</p>
 
           </div>
