@@ -8,16 +8,18 @@ import Link from 'next/link'
 const navigation = [
   { name: 'Features', href: '/' },
   { name: 'Cameras', href: '/cameras' },
-  { name: 'Guides', href: '/guides' },
-  { name: 'FAQ', href: '/guides/faq' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'User Manual', href: '/manual' },
+  { name: 'Help & Support', href: '/help' },
+  // { name: 'Guides', href: '/guides' },
+  // { name: 'FAQ', href: '/guides/faq' },
+  // { name: 'Contact', href: '/contact' },
 ]
 
 export default function Menu() {
   return (
     <div className="relative bg-white overflow-visible">
       <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-4 bg-white lg:max-w-2xl lg:w-full">
+        <div className="relative z-10 pb-4 bg-white">
           <Popover>
             <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
@@ -31,7 +33,7 @@ export default function Menu() {
                         type="image/svg+xml"
                         width={40}
                         height={40}
-                        />
+                      />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-400">
@@ -74,13 +76,13 @@ export default function Menu() {
                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
-                    <object
+                      <object
                         className="h-10 w-auto"
                         data="/icon.svg"
                         type="image/svg+xml"
                         width={40}
                         height={40}
-                        />
+                      />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-400">
