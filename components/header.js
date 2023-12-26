@@ -2,16 +2,9 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { navigation } from './menu'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const navigation = [
-  { name: 'Features', href: '/' },
-  { name: 'Cameras', href: '/cameras' },
-  { name: 'Guides', href: '/guides' },
-  { name: 'FAQ', href: '/guides/faq' },
-  { name: 'Contact', href: '/contact' },
-]
 
 export default function Header() {
   return (
@@ -41,7 +34,7 @@ export default function Header() {
                         type="image/svg+xml"
                         width={40}
                         height={40}
-                        />
+                      />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-400">
@@ -63,9 +56,9 @@ export default function Header() {
                     </Link>)
                   ))}
                   <Link href="/buy" className="font-medium text-red-600 hover:text-red-400">
-                    
-                      Download
-                    
+
+                    Download
+
                   </Link>
                 </div>
               </nav>
@@ -87,13 +80,13 @@ export default function Header() {
                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
-                    <object
+                      <object
                         className="h-10 w-auto"
                         data="/icon.svg"
                         type="image/svg+xml"
                         width={40}
                         height={40}
-                        />
+                      />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-400">
@@ -117,9 +110,9 @@ export default function Header() {
                   <Link
                     href="/buy"
                     className="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100">
-                    
-                      Download
-                    
+
+                    Download
+
                   </Link>
                 </div>
               </Popover.Panel>
@@ -144,18 +137,18 @@ export default function Header() {
                   <Link
                     href="/buy"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg">
-                    
-                      Download Shutter
-                    
+
+                    Download Shutter
+
                   </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <Link
                     href="/cameras"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-900 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg">
-                    
-                      Supported Cameras
-                    
+
+                    Supported Cameras
+
                   </Link>
 
                 </div>

@@ -1,3 +1,5 @@
+'use client'
+
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
@@ -5,11 +7,11 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const navigation = [
-  { name: 'Features', href: '/' },
+export const navigation = [
+  { name: 'Home', href: '/' },
   { name: 'Cameras', href: '/cameras' },
-  { name: 'User Manual', href: '/manual' },
-  { name: 'Help & Support', href: '/help' },
+  { name: 'Product  Manual', href: '/manual' },
+  { name: 'Help', href: '/help' },
   // { name: 'Guides', href: '/guides' },
   // { name: 'FAQ', href: '/guides/faq' },
   // { name: 'Contact', href: '/contact' },
@@ -25,7 +27,7 @@ export default function Menu() {
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
-                    <a href="/">
+                    <Link href="/">
                       <span className="sr-only">Shutter</span>
                       <object
                         className="h-10 w-auto"
@@ -34,7 +36,7 @@ export default function Menu() {
                         width={40}
                         height={40}
                       />
-                    </a>
+                    </Link>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-400">
                         <span className="sr-only">Open main menu</span>
@@ -55,9 +57,9 @@ export default function Menu() {
                     </Link>)
                   ))}
                   <Link href="/buy" className="font-medium text-red-600 hover:text-red-400">
-                    
-                      Download
-                    
+
+                    Download
+
                   </Link>
                 </div>
               </nav>
@@ -109,9 +111,9 @@ export default function Menu() {
                   <Link
                     href="/buy"
                     className="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100">
-                    
-                      Download
-                    
+
+                    Download
+
                   </Link>
                 </div>
               </Popover.Panel>
