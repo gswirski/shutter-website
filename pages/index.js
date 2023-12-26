@@ -217,12 +217,12 @@ export default function Home() {
             </div>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow">
-                <Link href="/buy">
-                  <a
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg"
-                  >
+                <Link
+                  href="/buy"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg">
+                  
                     Download Shutter
-                  </a>
+                  
                 </Link>
               </div>
 
@@ -321,5 +321,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

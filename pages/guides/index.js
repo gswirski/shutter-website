@@ -54,8 +54,8 @@ export default function Guides() {
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               You can use our{' '}
-              <Link href="/contact">
-                <a className="default-a">contact form</a>
+              <Link href="/contact" className="default-a">
+                contact form
               </Link>{' '}
               or email us at{' '}
               <a
@@ -76,10 +76,13 @@ export default function Guides() {
                     <div className="absolute flex items-center justify-center h-12 w-12 rounded-md text-red-900 bg-red-100 ">
                       <feature.icon className="h-6 w-6" aria-hidden="true" />
                     </div>
-                    <Link href={feature.href} key={feature.name}>
-                      <a className="block ml-16 text-xl font-bold tracking-normal leading-6 text-gray-800 underline underline-offset-2 decoration-1 decoration-gray-300 hover:text-black hover:decoration-black">
-                        {feature.name}
-                      </a>
+                    <Link
+                      href={feature.href}
+                      key={feature.name}
+                      className="block ml-16 text-xl font-bold tracking-normal leading-6 text-gray-800 underline underline-offset-2 decoration-1 decoration-gray-300 hover:text-black hover:decoration-black">
+
+                      {feature.name}
+
                     </Link>
                   </dt>
                   <dd className="mt-2 ml-16 text-base text-gray-500">{feature.description}</dd>
@@ -92,5 +95,5 @@ export default function Guides() {
 
       <Footer />
     </div>
-  )
+  );
 }

@@ -12,10 +12,12 @@ export default function Guides() {
       <div className="py-12 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="pb-12">
-            <Link href="/guides">
-              <a className="block lg:text-center default-a font-semibold tracking-wide uppercase">
+            <Link
+              href="/guides"
+              className="block lg:text-center default-a font-semibold tracking-wide uppercase">
+              
                 Guides
-              </a>
+              
             </Link>
             <h2 className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               How to focus without "tap to focus"
@@ -46,7 +48,5 @@ export default function Guides() {
 
       <Footer />
     </div>
-
-
-  )
+  );
 }

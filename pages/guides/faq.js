@@ -100,10 +100,12 @@ export default function Guides() {
       <div className="py-12 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="pb-12">
-            <Link href="/guides">
-              <a className="block lg:text-center default-a font-semibold tracking-wide uppercase">
+            <Link
+              href="/guides"
+              className="block lg:text-center default-a font-semibold tracking-wide uppercase">
+              
                 Guides
-              </a>
+              
             </Link>
             <h2 className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Frequently Asked Questions
@@ -111,8 +113,8 @@ export default function Guides() {
 
             <p className="mt-4 max-w-lg text-xl text-gray-500 lg:mx-auto lg:text-center">
               Can't find the answer you are looking for? Reach out to our{' '}
-              <Link href="/contact">
-                <a className="default-a">customer support</a>
+              <Link href="/contact" className="default-a">
+                customer support
               </Link>
               {' '}team.
             </p>
@@ -151,7 +153,5 @@ export default function Guides() {
 
       <Footer />
     </div>
-
-
-  )
+  );
 }

@@ -13,10 +13,12 @@ export default function Buy() {
       <div className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="pb-12">
-            <Link href="/buy">
-              <a className="block lg:text-center default-a font-semibold tracking-wide uppercase">
+            <Link
+              href="/buy"
+              className="block lg:text-center default-a font-semibold tracking-wide uppercase">
+              
                 App Store
-              </a>
+              
             </Link>
             <p className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Select Shutter Version
@@ -55,7 +57,5 @@ export default function Buy() {
 
       <Footer />
     </div>
-
-
-  )
+  );
 }

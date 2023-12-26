@@ -80,10 +80,12 @@ export default function Contact() {
       <div className="py-12 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="pb-12">
-            <Link href="/contact">
-              <a className="block lg:text-center default-a font-semibold tracking-wide uppercase">
+            <Link
+              href="/contact"
+              className="block lg:text-center default-a font-semibold tracking-wide uppercase">
+              
                 Contact
-              </a>
+              
             </Link>
             <p className="lg:text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Send Us A Message
@@ -192,7 +194,5 @@ export default function Contact() {
 
       <Footer />
     </div>
-
-
-  )
+  );
 }

@@ -47,8 +47,8 @@ export default function Cameras() {
             </h2>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               Your camera not on the list?{' '}
-              <Link href="/contact">
-                <a className="default-a">Contact us</a>
+              <Link href="/contact" className="default-a">
+                Contact us
               </Link>{' '}
               and we will see what we can do!
             </p>
@@ -188,5 +188,5 @@ export default function Cameras() {
 
       <Footer />
     </div>
-  )
+  );
 }

@@ -53,16 +53,19 @@ export default function Header() {
                 </div>
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {navigation.map((item) => (
-                    <Link key={item.name} href={item.href}>
-                      <a className="font-medium text-gray-500 hover:text-gray-900">
-                        {item.name}
-                      </a>
-                    </Link>
+                    (<Link
+                      key={item.name}
+                      href={item.href}
+                      className="font-medium text-gray-500 hover:text-gray-900">
+
+                      {item.name}
+
+                    </Link>)
                   ))}
-                  <Link href="/buy">
-                    <a className="font-medium text-red-600 hover:text-red-400">
+                  <Link href="/buy" className="font-medium text-red-600 hover:text-red-400">
+                    
                       Download
-                    </a>
+                    
                   </Link>
                 </div>
               </nav>
@@ -101,21 +104,22 @@ export default function Header() {
                   </div>
                   <div className="px-2 pt-2 pb-3 space-y-1">
                     {navigation.map((item) => (
-                      <Link
+                      (<Link
                         key={item.name}
                         href={item.href}
-                      >
-                        <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                          {item.name}
-                        </a>
-                      </Link>
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+
+                        {item.name}
+
+                      </Link>)
                     ))}
                   </div>
-                  <Link href="/buy">
-                    <a className="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100"
-                    >
+                  <Link
+                    href="/buy"
+                    className="block w-full px-5 py-3 text-center font-medium text-red-600 bg-gray-50 hover:bg-gray-100">
+                    
                       Download
-                    </a>
+                    
                   </Link>
                 </div>
               </Popover.Panel>
@@ -137,21 +141,21 @@ export default function Header() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Link href="/buy">
-                    <a
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg"
-                    >
+                  <Link
+                    href="/buy"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg">
+                    
                       Download Shutter
-                    </a>
+                    
                   </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Link href="/cameras">
-                    <a
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-900 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg"
-                    >
+                  <Link
+                    href="/cameras"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-900 bg-red-100 hover:bg-red-200 md:py-4 md:text-lg">
+                    
                       Supported Cameras
-                    </a>
+                    
                   </Link>
 
                 </div>
@@ -169,5 +173,5 @@ export default function Header() {
         />
       </div>
     </div>
-  )
+  );
 }
