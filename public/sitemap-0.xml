@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://shutter.dev</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/blog/image-transfer</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/buy</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/cameras</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/contact</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/guides</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/guides/bulb</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/guides/connect</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/guides/faq</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/guides/focus-help</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/legal/privacy-policy</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/legal/terms</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/support</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/update</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/manual/sony/remote-control</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://shutter.dev/manual</loc><lastmod>2023-12-26T17:16:41.945Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>
