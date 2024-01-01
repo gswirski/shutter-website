@@ -9,9 +9,11 @@ import ShutterHead from '../../components/head'
 
 const faqs = [
   {
-    question: "I already paid for Shutter but it asks me to pay again.",
+    question: "I already paid for Shutter. It asks me to pay again.",
     answer: `Make sure you are signed in to the same Apple ID that was used to purchase Shutter.
-      Tap "Restore Purchase" on the payment page to unlock access.`,
+      Tap "Restore Purchase" on the payment page to unlock access.`
+  },
+  {
     question: "The app doesn’t connect to the camera.",
     answer:
       `Restart your iPhone. If you are using a VPN (Virtual Private Network) app, disable it.
