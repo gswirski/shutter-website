@@ -15,13 +15,6 @@ const noBurst = ['a7', 'a7R', 'a7S', 'a5000', 'a5100', 'a6000', 'RX100 III', 'HX
 const noBulb = ['HX400V', 'HX60V', 'HX80', 'HX90V', 'WX500', 'NEX-5R', 'NEX-5T', 'NEX-6']
 
 const sonyCameras = sonyList
-  .sort((a, b) => {
-    const al = a.toLowerCase();
-    const bl = b.toLowerCase();
-    if (al < bl) { return -1; }
-    if (bl > al) { return 1; }
-    return 0;
-  })
   .map((camera) => {
     var focus = 'normal'
     if (noFocus.includes(camera)) {
@@ -42,7 +35,6 @@ const sonyCameras = sonyList
       download: "https://itunes.apple.com/us/app/shutter-camera-remote/id1459044148?ls=1&mt=8"
     }
   });
-
 
 const canonEosList = [
   "R", "Ra", "RP", "R3", "R5", "R5 C", "R6", "R6 II", "R7", "R8", "R10", "R50", "R100",
@@ -70,15 +62,7 @@ const canonList = canonEosList.map(x => `EOS ${x}`)
   .concat(canonPowerShotList.map(x => `PowerShot ${x}`))
 
 const canonCameras = canonList
-  .sort((a, b) => {
-    const al = a.toLowerCase();
-    const bl = b.toLowerCase();
-    if (al < bl) { return -1; }
-    if (bl > al) { return 1; }
-    return 0;
-  })
   .map((camera) => {
-    var focus = ""
     return {
       name: `Canon ${camera}`,
       support: true,
@@ -91,8 +75,26 @@ const canonCameras = canonList
     }
   });
 
+const fujifilmList = [
+  "X-E4", "X-H2", "X-H2S", "X-Pro3", "X-S10", "X-S20", "X-T3", "X-T30", "X-T30 II", "X-T4", "X-T5", "X100V", "X100VI"
+]
+const fujifilmCameras = fujifilmList
+  .map((camera) => {
+    return {
+      name: `Fujifilm ${camera}`,
+      support: true,
+      video: true,
+      burst: false,
+      bulb: false,
+      focus: 'normal',
+      import: true,
+      download: "https://itunes.apple.com/us/app/shutter-fujifilm-camera-remote/id6478856044?ls=1&mt=8"
+    }
+  });
+
 const cameras = sonyCameras
   .concat(canonCameras)
+  .concat(fujifilmCameras)
   .sort((a, b) => {
     const al = a.name.toLowerCase();
     const bl = b.name.toLowerCase();
