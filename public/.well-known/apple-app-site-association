@@ -1,0 +1,35 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "M83UW57364.com.cca.shutter-ios"
+                ],
+                "components": [
+                    {
+                        "/": "/fujifilm/*",
+                        "comment": "Matches any URL with a path that starts with /fujifilm/."
+                    }
+                ]
+            },
+            {
+                "appIDs": [
+                    "M83UW57364.com.swirski.photo-booth-a7m3"
+                ],
+                "components": [
+                    {
+                        "/": "/sony/*",
+                        "comment": "Matches any URL with a path that starts with /sony/."
+                    }
+                ]
+            }
+
+        ]
+    },
+    "webcredentials": {
+        "apps": []
+    },
+    "appclips": {
+        "apps": []
+    }
+}
