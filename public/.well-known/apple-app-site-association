@@ -7,8 +7,8 @@
                 ],
                 "components": [
                     {
-                        "/": "/fujifilm/applink/*",
-                        "comment": "Matches any URL with a path that starts with /fujifilm/applink/."
+                        "/": "/applink/fujifilm/*",
+                        "comment": "Matches any URL with a path that starts with /applink/fujifilm/."
                     }
                 ]
             },
@@ -18,8 +18,8 @@
                 ],
                 "components": [
                     {
-                        "/": "/sony/applink/*",
-                        "comment": "Matches any URL with a path that starts with /sony/applink/."
+                        "/": "/applink/sony/*",
+                        "comment": "Matches any URL with a path that starts with /applink/sony/."
                     }
                 ]
             }
