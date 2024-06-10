@@ -11,7 +11,7 @@ export default function Home() {
         <div className="lg:text-center">
           <h2 className="text-base text-red-600 font-semibold tracking-wide uppercase">Major Update</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Apple Watch app now available
+            Fujifilm remote app for Apple Watch now available
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Easily control your Fujifilm X camera from the wrist!
