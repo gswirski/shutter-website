@@ -76,8 +76,12 @@ const canonCameras = canonList
   });
 
 const fujifilmList = [
-  "X-E4", "X-H2", "X-H2S", "X-Pro3", "X-S10", "X-S20", "X-T3", "X-T30", "X-T30 II", "X-T4", "X-T5", "X100V", "X100VI"
+  "X-E3", "X-E4", "X-H1", "X-H2", "X-H2S",
+  "X-Pro2", "X-Pro3", "X-S10", "X-S20",
+  "X-T2", "X-T20",
+  "X-T3", "X-T30", "X-T30 II", "X-T4", "X-T5", "X100V", "X100VI"
 ]
+
 const fujifilmCameras = fujifilmList
   .map((camera) => {
     return {

@@ -124,11 +124,11 @@ export default function Header() {
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
-                Better iPhone app
+              <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-4xl">
+                Better iPhone app for
               </h1>
-              <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
-                for <span className="text-red-600">Sony</span> &amp; <span className="text-red-600">Canon</span> cameras
+              <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-4xl">
+                <span className="text-red-600">Canon</span>, <span className="text-red-600">Fujifilm</span> &amp; <span className="text-red-600">Sony</span> cameras
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Focus on making the best pictures.

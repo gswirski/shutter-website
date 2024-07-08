@@ -23,29 +23,48 @@ export default function Buy() {
             </p>
           </div>
 
-          <div className="mt-6 space-y-12 space-y-0 grid grid-cols-2 gap-x-6">
-            <a href="https://apps.apple.com/us/app/shutter-camera-remote/id1459044148?ls=1" className="group relative">
-              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-40">
-                <img
-                  className="h-36 w-auto mx-auto"
-                  src="/sony_icon.svg"
-                  />              </div>
-              <p className="text-xl font-bold text-gray-900 text-center group-hover:underline underline-offset-4 decoration-1 decoration-gray-400">
-                <span className="text-orange-600">Sony</span> cameras
+          <div className="mt-6 space-y-12 space-y-0 grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-12">
+          <a href="https://apps.apple.com/us/app/shutter-canon-eos-remote/id1562636889" className="group relative">
+              <p className="text-xl font-bold text-gray-900 text-center mb-2">
+                Canon
               </p>
-            </a>
 
-            <a href="https://apps.apple.com/us/app/shutter-canon-eos-remote/id1562636889" className="group relative">
-              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-40">
+              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:h-40">
                 <img
                   className="h-36 w-auto mx-auto"
                   src="/icon.svg"
                   />
               </div>
-              <p className="text-xl font-bold text-gray-900 text-center group-hover:underline underline-offset-4 decoration-1 decoration-gray-400">
-                <span className="text-red-600">Canon</span> cameras
-              </p>
             </a>
+
+            <a href="https://apps.apple.com/us/app/shutter-fujifilm-camera-remote/id6478856044" className="group relative">
+              <p className="text-xl font-bold text-gray-900 text-center mb-2">
+                Fujifilm
+              </p>
+
+              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:h-40">
+                <img
+                  className="h-36 w-auto mx-auto"
+                  src="/icon_fuji.png"
+                  />
+              </div>
+            </a>
+
+
+
+            <a href="https://apps.apple.com/us/app/shutter-camera-remote/id1459044148?ls=1" className="group relative">
+              <p className="text-xl font-bold text-gray-900 text-center mb-2">
+                Sony
+              </p>
+
+              <div className="relative w-full h-40 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:h-40">
+                <img
+                  className="h-36 w-auto mx-auto"
+                  src="/sony_icon.svg"
+                  />
+              </div>
+            </a>
+
 
           </div>
 
