@@ -89,7 +89,9 @@ const fujifilmList = [
   "X-E3", "X-E4", "X-H1", "X-H2", "X-H2S",
   "X-Pro2", "X-Pro3", "X-S10", "X-S20",
   "X-T2", "X-T20",
-  "X-T3", "X-T30", "X-T30 II", "X-T4", "X-T5", "X100V", "X100VI"
+  "X-T3", "X-T30", "X-T30 II", "X-T4", "X-T5", "X100V", "X100VI",
+  "GFX50S", "GFX50S II", "GFX50R",
+  "GFX100", "GFX100 II", "GFX100 IR", "GFX100S", "GFX100S II"
 ]
 
 const fujifilmCameras = fujifilmList
